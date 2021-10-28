@@ -13,7 +13,6 @@ body{
 .wrap{
     margin: 0 auto;
     width: 1140px;
-    outline: 1px solid green;
 }
 .italic{
    font-style: italic;
@@ -87,14 +86,41 @@ line-height: 58px;
     gap: 30px;
     list-style-type: none;
 }
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_offer{
+  position: absolute;
+  text-align: center;
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  width: 160px;
+}
+.no_style{
+ display: flex;
+ align-items: center;
+    justify-content: center;
+ 
+}
+.text_offer::first-line{
+ font-size: 16px;
+Line-height: 19px;
+color: #FFFFFF;
+font-weight: 400;
+}
 /* featured items */
 .features{
-    background-color: #E5E5E5;
+   
 }
 .featured{
     color: #222222;
     font-size: 30px;
     text-align: center;
+    margin-bottom: 6px;
 }
 .text_featured{
     font-size: 22px;
@@ -107,15 +133,14 @@ line-height: 58px;
     display: flex;
     flex-wrap: wrap;
    justify-content: space-between;
+   gap: 30px  ;
   }
   .card {
     width: 360px;
-    height: 581px;
     box-sizing: border-box;
     background-color: #F8F8F8;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
   }
   .card_text{
 margin: 25px 28px 57px 16px;
@@ -219,29 +244,47 @@ color: #FBFBFB;
     text-align: center;
     color: #222224;
   }
-  .sub_place{
-      display: flex;
-      justify-content: space-around;
-    align-items: center;
-  }
   .card_subimg{
       width: 96px;
       height: 96px;
       align-self: center;
   }
-  .butt {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    width: 428px;
-      height: 72px;
+  .for_subscr{
+
   }
+  .subscribe_title{
+    font-size: 18px;
+Line-height: 30px;
+font-weight: 400;
+text-align: center;
+margin-bottom: 32px;
+  }
+.subscribe_title::first-line{
+font-size: 24px;
+Line-height: 40px;
+font-weight: 700;
+}
+  .subscr_form{
+display: flex;
+justify-content: center;
+  }
+.sub-form-field{
+background-color: #E1E1E1;
+border: none;
+padding: 18px;
+border-radius: 35px 0 0 35px;
+}
+.sub-form-button{
+background-color: #F16D7F;
+border: none;
+padding: 18px;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+font-weight: 400;
+border-radius: 0 35px 35px 0;
+}
+/* footer */
   .footer{
     background-color: #222224;
   }
@@ -260,4 +303,29 @@ color: #FBFBFB;
   .marg_href{
       margin: 24px 0px 24px 10px;
   }
-  
+  /* CATALOG */
+  .top_catalog{
+    background-color: #F8F3F4;
+    
+  }
+  .catalog_navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+    list-style-type: none;
+  }
+  .filter{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  .filter-1{
+    margin-left: 16px;
+    margin-bottom: 64px;
+  }
+  .filter_img{
+    width: 15px;
+    height: 10px;
+    margin: 55px 304px auto 11px;
+  }
